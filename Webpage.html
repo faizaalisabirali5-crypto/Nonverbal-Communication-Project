@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Your Body Says</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      background: #0d1b2a;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #90e0ef;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #1e3c72;
+      font-size: 2rem;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .emoji {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .quiz-box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .quiz-box button {
+      margin: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #1e3c72;
+      color: white;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .quiz-box button:hover {
+      background: #2a5298;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      background: #0d1b2a;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+
+    .intro-box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .intro-box p {
+      margin-top: 15px;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>What Your Body Says</h1>
+    <p>
+      Understanding Nonverbal Communication Through Facial Expressions,
+      Body Language, Eye Contact, and Personal Space.
+    </p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#facial">Facial Expressions</a>
+    <a href="#body">Body Language</a>
+    <a href="#eye">Eye Contact</a>
+    <a href="#space">Personal Space</a>
+    <a href="#quiz">Quiz</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Nonverbal Communication</h2>
+    <div class="intro-box">
+      <p>
+        Nonverbal communication is communication without words.
+        People use facial expressions, gestures, posture, and eye contact
+        to express emotions and feelings.
+      </p>
+      <p>
+        Understanding body language helps improve relationships,
+        trust, and communication skills.
+      </p>
+    </div>
+  </section>
+
+  <section id="facial">
+    <h2>Facial Expressions</h2>
+
+    <div class="card-container">
+      <div class="card">
+        <div class="emoji">😊</div>
+        <h3>Happiness</h3>
+        <p>A smile usually shows friendliness, comfort, and positivity.</p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">😠</div>
+        <h3>Anger</h3>
+        <p>An angry face may show frustration, stress, or disagreement.</p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">😢</div>
+        <h3>Sadness</h3>
+        <p>Sad expressions can communicate disappointment or emotional pain.</p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">😨</div>
+        <h3>Nervousness</h3>
+        <p>Nervous expressions may show fear, anxiety, or discomfort.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="body">
+    <h2>Body Language</h2>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>Crossed Arms</h3>
+        <p>This may show defensiveness, discomfort, or disagreement.</p>
+      </div>
+
+      <div class="card">
+        <h3>Open Posture</h3>
+        <p>An open posture usually shows confidence and friendliness.</p>
+      </div>
+
+      <div class="card">
+        <h3>Leaning Forward</h3>
+        <p>This often shows interest and active listening.</p>
+      </div>
+
+      <div class="card">
+        <h3>Looking Away</h3>
+        <p>Looking away may suggest nervousness or lack of attention.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="eye">
+    <h2>Eye Contact</h2>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>Good Eye Contact</h3>
+        <p>
+          Good eye contact can build trust, confidence, and stronger communication.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>No Eye Contact</h3>
+        <p>
+          Avoiding eye contact may make someone appear nervous or distracted.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="space">
+    <h2>Personal Space</h2>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>Close Distance</h3>
+        <p>
+          Close personal space is common between family members and close friends.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Comfortable Distance</h3>
+        <p>
+          Comfortable distance helps people feel relaxed during conversation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Too Close</h3>
+        <p>
+          Standing too close may make someone uncomfortable.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="quiz">
+    <h2>Can You Read the Signals?</h2>
+
+    <div class="quiz-box">
+      <h3>What do crossed arms usually mean?</h3>
+
+      <button onclick="checkAnswer('wrong')">Confidence</button>
+      <button onclick="checkAnswer('correct')">Defensiveness</button>
+      <button onclick="checkAnswer('wrong')">Excitement</button>
+
+      <div id="result"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Conclusion</h2>
+
+    <div class="intro-box">
+      <p>
+        Nonverbal communication affects our daily interactions and relationships.
+        Understanding body language helps people communicate more clearly,
+        respectfully, and confidently.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>COMM 120 Creative Presentation Project</p>
+    <p>Created by Student</p>
+  </footer>
+
+  <script>
+    function checkAnswer(answer) {
+      const result = document.getElementById('result');
+
+      if(answer === 'correct') {
+        result.innerHTML = 'Correct! Crossed arms often show defensiveness or discomfort.';
+        result.style.color = 'green';
+      } else {
+        result.innerHTML = 'Incorrect. Try again!';
+        result.style.color = 'red';
+      }
+    }
+  </script>
+
+</body>
+</html>
+
