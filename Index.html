@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>What Your Body Says</title>
+  <title>What Your Body Says - Nonverbal Communication Guide</title>
+  <meta name="description" content="Learn to understand facial expressions, body language, eye contact, and personal space. Interactive guide to nonverbal communication." />
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -50,6 +55,7 @@
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
@@ -82,11 +88,12 @@
       padding: 25px;
       text-align: center;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
 
     .emoji {
@@ -113,6 +120,7 @@
       color: white;
       cursor: pointer;
       font-size: 1rem;
+      transition: background 0.3s ease;
     }
 
     .quiz-box button:hover {
@@ -145,12 +153,31 @@
       margin-top: 15px;
       font-size: 1.1rem;
     }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      
+      nav a {
+        margin: 0 8px;
+        font-size: 0.9rem;
+      }
+      
+      section {
+        padding: 40px 15px;
+      }
+      
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>What Your Body Says</h1>
+    <h1>🤝 What Your Body Says</h1>
     <p>
       Understanding Nonverbal Communication Through Facial Expressions,
       Body Language, Eye Contact, and Personal Space.
@@ -167,7 +194,7 @@
   </nav>
 
   <section id="about">
-    <h2>About Nonverbal Communication</h2>
+    <h2>📖 About Nonverbal Communication</h2>
     <div class="intro-box">
       <p>
         Nonverbal communication is communication without words.
@@ -182,27 +209,23 @@
   </section>
 
   <section id="facial">
-    <h2>Facial Expressions</h2>
-
+    <h2>😊 Facial Expressions</h2>
     <div class="card-container">
       <div class="card">
         <div class="emoji">😊</div>
         <h3>Happiness</h3>
         <p>A smile usually shows friendliness, comfort, and positivity.</p>
       </div>
-
       <div class="card">
         <div class="emoji">😠</div>
         <h3>Anger</h3>
         <p>An angry face may show frustration, stress, or disagreement.</p>
       </div>
-
       <div class="card">
         <div class="emoji">😢</div>
         <h3>Sadness</h3>
         <p>Sad expressions can communicate disappointment or emotional pain.</p>
       </div>
-
       <div class="card">
         <div class="emoji">😨</div>
         <h3>Nervousness</h3>
@@ -212,25 +235,25 @@
   </section>
 
   <section id="body">
-    <h2>Body Language</h2>
-
+    <h2>💪 Body Language</h2>
     <div class="card-container">
       <div class="card">
+        <div class="emoji">🙅</div>
         <h3>Crossed Arms</h3>
         <p>This may show defensiveness, discomfort, or disagreement.</p>
       </div>
-
       <div class="card">
+        <div class="emoji">🧍</div>
         <h3>Open Posture</h3>
         <p>An open posture usually shows confidence and friendliness.</p>
       </div>
-
       <div class="card">
+        <div class="emoji">⬇️</div>
         <h3>Leaning Forward</h3>
         <p>This often shows interest and active listening.</p>
       </div>
-
       <div class="card">
+        <div class="emoji">👀</div>
         <h3>Looking Away</h3>
         <p>Looking away may suggest nervousness or lack of attention.</p>
       </div>
@@ -238,97 +261,83 @@
   </section>
 
   <section id="eye">
-    <h2>Eye Contact</h2>
-
+    <h2>👁️ Eye Contact</h2>
     <div class="card-container">
       <div class="card">
+        <div class="emoji">👁️👁️</div>
         <h3>Good Eye Contact</h3>
-        <p>
-          Good eye contact can build trust, confidence, and stronger communication.
-        </p>
+        <p>Good eye contact can build trust, confidence, and stronger communication.</p>
       </div>
-
       <div class="card">
+        <div class="emoji">🙈</div>
         <h3>No Eye Contact</h3>
-        <p>
-          Avoiding eye contact may make someone appear nervous or distracted.
-        </p>
+        <p>Avoiding eye contact may make someone appear nervous or distracted.</p>
       </div>
     </div>
   </section>
 
   <section id="space">
-    <h2>Personal Space</h2>
-
+    <h2>📍 Personal Space</h2>
     <div class="card-container">
       <div class="card">
+        <div class="emoji">👨‍👩‍👧</div>
         <h3>Close Distance</h3>
-        <p>
-          Close personal space is common between family members and close friends.
-        </p>
+        <p>Close personal space is common between family members and close friends.</p>
       </div>
-
       <div class="card">
+        <div class="emoji">🚶‍♂️🚶‍♀️</div>
         <h3>Comfortable Distance</h3>
-        <p>
-          Comfortable distance helps people feel relaxed during conversation.
-        </p>
+        <p>Comfortable distance helps people feel relaxed during conversation.</p>
       </div>
-
       <div class="card">
+        <div class="emoji">⚠️</div>
         <h3>Too Close</h3>
-        <p>
-          Standing too close may make someone uncomfortable.
-        </p>
+        <p>Standing too close may make someone uncomfortable.</p>
       </div>
     </div>
   </section>
 
   <section id="quiz">
-    <h2>Can You Read the Signals?</h2>
-
+    <h2>❓ Can You Read the Signals?</h2>
     <div class="quiz-box">
-      <h3>What do crossed arms usually mean?</h3>
-
+      <h3>Question 1: What do crossed arms usually mean?</h3>
       <button onclick="checkAnswer('wrong')">Confidence</button>
       <button onclick="checkAnswer('correct')">Defensiveness</button>
       <button onclick="checkAnswer('wrong')">Excitement</button>
-
       <div id="result"></div>
     </div>
   </section>
 
   <section>
-    <h2>Conclusion</h2>
-
+    <h2>📝 Conclusion</h2>
     <div class="intro-box">
       <p>
         Nonverbal communication affects our daily interactions and relationships.
         Understanding body language helps people communicate more clearly,
         respectfully, and confidently.
       </p>
+      <p style="margin-top: 15px;">
+        <strong>Remember:</strong> Always consider cultural differences when interpreting body language!
+      </p>
     </div>
   </section>
 
   <footer>
-    <p>COMM 120 Creative Presentation Project</p>
-    <p>Created by Student</p>
+    <p>📚 COMM 120 Creative Presentation Project</p>
+    <p>✨ Understanding Nonverbal Communication | What Your Body Says ✨</p>
   </footer>
 
   <script>
     function checkAnswer(answer) {
       const result = document.getElementById('result');
-
       if(answer === 'correct') {
-        result.innerHTML = 'Correct! Crossed arms often show defensiveness or discomfort.';
+        result.innerHTML = '✅ Correct! Crossed arms often show defensiveness or discomfort.';
         result.style.color = 'green';
       } else {
-        result.innerHTML = 'Incorrect. Try again!';
+        result.innerHTML = '❌ Incorrect. Try again! (Hint: Crossed arms usually show defensiveness)';
         result.style.color = 'red';
       }
     }
   </script>
-
 </body>
 </html>
-
